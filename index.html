@@ -1,0 +1,46 @@
+<!--
+    Local Weather
+    Author: Max Woods
+    A simple app that displays your local weather
+    ...along with a friendly icon!
+    
+    Uses the Weather Underground API for data.
+    Requires HTTPS.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/weather-icons.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <title>Local Weather</title>
+</head>
+<body>
+    <div class="container">
+        <div class="weather">
+            <div class="loading">
+                Retrieving weather data...
+            </div>
+            <div class="location data"></div>
+            <div class="icon data">
+                <i class="weather-icon wi"></i>
+            </div>
+            <div class="description data"></div>
+            <!-- courtesy https://erikflowers.github.io/weather-icons/ -->
+            <div class="temperature data"></div>
+            <div class="toggle data">
+                <span class="label">F</span>
+                <label class="switch">
+                    <input class="temp-box" type ="checkbox">
+                    <div class="slider round"></div>
+                </label>
+                <span class="label">C</span>
+            </div> <!-- end toggle -->
+        </div> <!-- end weather -->
+    </div> <!-- end container -->
+    <script src="app.js"></script>
+</body>
+</html>
